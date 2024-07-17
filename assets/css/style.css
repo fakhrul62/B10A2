@@ -29,7 +29,7 @@ p {
     line-height: 24px;
 }
 
-input {
+input, select {
     border: none;
     box-shadow: none;
     outline: none;
@@ -151,7 +151,9 @@ header li:hover {
     color: #fff;
     transition: ease-in .2s;
 }
-
+.hero-body .btn1{
+    margin-right: 15px;
+}
 .btn1:hover {
     background: #fff;
     color: var(--orange);
@@ -456,3 +458,175 @@ header li:hover {
 }
 
 /* BMI Calculator */
+.bmi-text{
+    text-align: center;
+    margin: 100px 0;
+}
+.bmi-text h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+.calculator{
+    background: #222222;
+    padding: 50px 0;
+}
+.cal-grid{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.left-cal h4{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.left-cal table,td,th{
+    border: 1px solid var(--ash);
+    border-collapse: collapse;
+    padding: 15px 20px;
+    text-align: left;
+    color: #fff;
+}
+.left-cal td{
+    color: var(--ash);
+}
+.right-cal h4{
+    font-size: 30px;
+}
+.right-cal p{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.right-cal .input{
+
+    background: #ffffff10;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--ash);
+}
+.grid-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.full{
+grid-column: 1/3;
+}
+/* Meet Our Team */
+#team{
+    margin: 100px 0;
+}
+.team-box{
+    text-align: center;
+}
+.team-box h2{
+    font-size: 50px;
+}
+.team-box p{
+    margin: 30px 0;
+}
+.team-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    background: #222;
+}
+.trainer img{
+    border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
+}
+.trainer{
+    position: relative;
+}
+.trainer-text{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.trainer-text p{
+    color: #aaaaaa;
+}
+
+/* blog */
+#blog{
+    margin: 100px 0;
+}
+.blog-text{
+    text-align: center;
+}
+.blog-text h2{
+    font-size: 50px;
+}
+.blog-text p{
+    margin: 30px 0;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.blog-single{
+    background: #333;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+.blog-single img{
+    border-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-single h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.blog-single h6{
+    color: #969696;
+}
+.blog-single p{
+    margin: 15px 0;
+}
+.blog-single button{
+    padding: 10px 20px;
+    background: var(--orange);
+    color: #fff;
+    border-radius: 50px;
+
+}
+/* footer */
+footer{
+background: #ffffff10;
+}
+.foot-div{
+    display: grid;
+    grid-template-columns: 50% 24% 24%;
+    padding: 50px 0;
+    gap: 2%;
+}
+.logo-footer h3{
+    color: var(--orange);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.footer-rest h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-rest li{
+    font-size: 18px;
+    color: var(--ash);
+    font-weight: 400;
+    line-height: 35px;
+}
+footer hr{
+    border: 1px solid #4e4e4e;
+}
+.copy{
+    padding: 25px 0;
+    text-align: center;
+}
