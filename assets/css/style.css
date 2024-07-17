@@ -310,3 +310,89 @@ header li:hover {
     height: -webkit-fill-available;
     border-radius: 15px;
 }
+
+/* Trainings and Exercises */
+#train{
+    margin: 100px 0;
+}
+.training-text h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+.training-text p{
+    margin: 20px 0;
+}
+.training-gallery-one {
+    display: grid;
+    grid-template-columns: 25% 49% 26%;
+}
+.training-gallery-one img{
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.training-gallery-two {
+    display: grid;
+    grid-template-columns: 45% 25% 30%;
+}
+.training-gallery-two img{
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.train-rel1{
+    position: relative;
+}
+.train-abs1{
+    position: absolute;
+    background: #06ffd151;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+}
+.train-inner1{
+    padding: 30px;
+}
+.train-inner1 h4{
+    color: #000;
+}
+.train-rel2{
+    position: relative;
+}
+.train-abs2{
+    position: absolute;
+    background: #ff000031;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.train-inner2{
+    padding: 30px;
+}
+.train-inner2 h4{
+    color: #fff;
+}
+.train-rel3{
+    position: relative;
+}
+.train-abs3{
+    position: absolute;
+    background: #00000050;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+}
+.train-inner3{
+    padding: 30px;
+}
+.train-inner3 h4{
+    color: #fff;
+}
