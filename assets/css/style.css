@@ -279,3 +279,34 @@ header li:hover {
     font-size: 20px;
     font-weight: 600;
 }
+
+/* run extra */
+.extra{
+    background: #222222;
+    padding: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+.extra h2{
+    font-size: 55px;
+    font-weight: 800;
+}
+.extra p{
+    margin: 25px 0;
+}
+.extra .btn1{
+    padding: 15px 60px;
+}
+.extra-img{
+    text-align: end;
+    place-content: center;
+}
+.extra-img img{
+    width: 80%;
+    object-fit: none;
+    object-position: -730px -175px;
+    height: -webkit-fill-available;
+    border-radius: 15px;
+}
