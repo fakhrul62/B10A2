@@ -88,6 +88,12 @@ body {
     transition: ease-in .4s;
     justify-content: space-between;
 }
+.menu-bar{
+    text-align: end;
+}
+.menu-bar img{
+    width: 15%;
+}
 
 .desktop-header h3 {
     color: var(--orange);
@@ -137,7 +143,7 @@ body {
 
 .hero-body h1 {
     font-weight: 900;
-    font-size: 75px;
+    font-size: 105px;
     transition: ease-in .4s;
     line-height: 113%;
 }

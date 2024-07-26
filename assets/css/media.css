@@ -54,10 +54,10 @@
 
     .btn1 {
         background: var(--orange);
-        padding: 15px 30px;
+        padding: 13px 17px;
         border-radius: 50px;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 0.7px;
         color: #fff;
         transition: ease-in .2s;
@@ -65,11 +65,11 @@
 
     .btn2 {
         background: transparent;
-        padding: 15px 30px;
+        padding: 13px 17px;
         border-radius: 50px;
         border: 1px solid #fff;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 0.7px;
         color: #fff;
         transition: ease-in .2s;
