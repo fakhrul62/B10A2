@@ -13,7 +13,7 @@
     <!-- hero -->
     <section id="hero">
         <div class="container">
-            <header>
+            <header class="desktop-header">
                 <h3>Fitness</h3>
                 <ul>
                     <li>home</li>
@@ -21,6 +21,10 @@
                     <li>service</li>
                     <li>contact</li>
                 </ul>
+            </header>
+            <header class="mobile-header">
+                <h3>Fitness</h3>
+                <span>X</span>
             </header>
             <div class="hero-body">
                 <div class="left-hero">
@@ -49,7 +53,7 @@
         </div>
     </section>
 
-    <!-- chnage your habit -->
+    <!-- change your habit -->
     <section id="habit">
         <div class="container">
             <div class="habit-text">
@@ -163,15 +167,16 @@
     </section>
 
     <!-- BMI Calculator -->
-     <section>
+    <section>
         <div class="container">
             <div class="bmi-text">
                 <h2>BMI Calculator</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                    gym.</p>
             </div>
         </div>
-     </section>
-     <section class="calculator">
+    </section>
+    <section class="calculator">
         <div class="container">
             <div class="cal-grid">
                 <div class="left-cal">
@@ -201,41 +206,53 @@
                 </div>
                 <div class="right-cal">
                     <h4>Calculate your BMI</h4>
-                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym. </p>
                     <div>
                         <form action="#" method="post">
                             <div class="grid-form">
-                                <input class="input" type="number" placeholder="Height/cm">
-                                <input  class="input"  type="number" placeholder="Weight/kg">
-                                <input  class="input"  type="number" placeholder="Age">
-                                <select  class="input"  name="" id="">
-                                    <option value="">Sex</option>
-                                    <option value="">Male</option>
-                                    <option value="">Fmale</option>
-                                    <option value="">Others</option>
-                                </select>
-                                <select  class="input full"  name="" id="">
-                                    <option value="">Select an activity factor</option>
-                                    <option value="">Running</option>
-                                    <option value="">Push Ups</option>
-                                    <option value="">Pull Ups</option>
-                                </select>
+                                <div class="overflow-form">
+                                    <input class="input" type="number" placeholder="Height/cm">
+                                </div>
+                                <div class="overflow-form">
+                                    <input class="input" type="number" placeholder="Weight/kg">
+                                </div>
+                                <div class="overflow-form">
+                                    <input class="input" type="number" placeholder="Age">
+                                </div>
+                                <div class="overflow-form">
+                                    <select class="input" name="" id="">
+                                        <option value="">Sex</option>
+                                        <option value="">Male</option>
+                                        <option value="">Fmale</option>
+                                        <option value="">Others</option>
+                                    </select>
+                                </div>
+                                <div class="full overflow-form">
+                                    <select class="input">
+                                        <option value="">Select an activity factor</option>
+                                        <option value="">Running</option>
+                                        <option value="">Push Ups</option>
+                                        <option value="">Pull Ups</option>
+                                    </select>
+                                </div>
                             </div>
-                            
+
                             <button class="btn1">Calculate</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- Meet Our Team -->
-      <section id="team">
+    <!-- Meet Our Team -->
+    <section id="team">
         <div class="container">
             <div class="team-box">
                 <h2>Meet Our Team</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                    gym.</p>
             </div>
             <div class="team-gallery">
                 <div class="trainer">
@@ -282,47 +299,55 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Blog -->
-       <section id="blog">
+    <!-- Blog -->
+    <section id="blog">
         <div class="container">
             <div class="blog-text">
                 <h2>Our Blogs</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                    gym.</p>
             </div>
             <div class="blogs">
                 <div class="blog-single">
                     <img src="assets/images/blog (1).jpg" alt="">
                     <h3>THE BEST GYM WORKOUT PLAN FOR GAINING MUSCLE</h3>
                     <h6>Wednesday, 15 November 2023</h6>
-                    <p>So, you want to build those muscles? That's great! Building muscle requires a person to commit to regular strength training for a long period of time....</p>
-                    <a href="https://www.puregym.com/blog/the-best-gym-workout-plan-for-gaining-muscle/" target="_blank"><button type="button">Read More</button></a>
+                    <p>So, you want to build those muscles? That's great! Building muscle requires a person to commit to
+                        regular strength training for a long period of time....</p>
+                    <a href="https://www.puregym.com/blog/the-best-gym-workout-plan-for-gaining-muscle/"
+                        target="_blank"><button type="button">Read More</button></a>
                 </div>
                 <div class="blog-single">
                     <img src="assets/images/blog (2).jpg" alt="">
                     <h3>CALORIES AND WEIGHT LOSS - WHAT YOU NEED TO KNOW</h3>
                     <h6>Wednesday, 25 October 2023</h6>
-                    <p>If you're looking to lose weight, the huge number of diet plans and nutritional guidance available can seem overwhelming, with many competing ideas....</p>
-                    <a href="https://www.puregym.com/blog/how-many-calories-you-should-be-eating-to-lose-weight/" target="_blank"><button type="button">Read More</button></a>
+                    <p>If you're looking to lose weight, the huge number of diet plans and nutritional guidance
+                        available can seem overwhelming, with many competing ideas....</p>
+                    <a href="https://www.puregym.com/blog/how-many-calories-you-should-be-eating-to-lose-weight/"
+                        target="_blank"><button type="button">Read More</button></a>
                 </div>
                 <div class="blog-single">
                     <img src="assets/images/blog (3).jpg" alt="">
                     <h3>THE BEST GYM WORKOUT PLANS FOR BEGINNERS</h3>
                     <h6>Wednesday, 8 November 2023</h6>
-                    <p>If you're just getting started at the gym, it can feel challenging knowing what to do and how to shape your visits to the gym. What are your goals?....</p>
-                    <a href="https://www.puregym.com/blog/the-best-gym-workout-plans-for-beginners/" target="_blank"><button type="button">Read More</button></a>
+                    <p>If you're just getting started at the gym, it can feel challenging knowing what to do and how to
+                        shape your visits to the gym. What are your goals?....</p>
+                    <a href="https://www.puregym.com/blog/the-best-gym-workout-plans-for-beginners/"
+                        target="_blank"><button type="button">Read More</button></a>
                 </div>
             </div>
         </div>
-       </section>
-      <!-- footer -->
-      <footer>
+    </section>
+    <!-- footer -->
+    <footer>
         <div class="container">
             <div class="foot-div">
                 <div class="logo-footer">
                     <h3>Fitness</h3>
-                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym. With hundreds of professional workouts.</p>
                 </div>
                 <div class="footer-rest">
                     <h4>Get Started</h4>
@@ -348,7 +373,7 @@
                 <p>All right reserved @Fitness 2024</p>
             </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>

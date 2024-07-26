@@ -6,6 +6,7 @@
     padding: 0;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    transition: ease-in .4s;
 }
 
 a {
@@ -73,33 +74,39 @@ body {
     margin: 0 auto;
 }
 
-/* hero */
+/************************************************************* hero *************************************************************/
+/***************************************************************  ***************************************************************/
 #hero {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(33, 33, 33) 100%);
+    width: 100%;
+    transition: ease-in .4s;
 }
 
-#hero header {
+#hero .desktop-header {
     padding: 50px 0;
     display: flex;
+    transition: ease-in .4s;
     justify-content: space-between;
 }
 
-header h3 {
+.desktop-header h3 {
     color: var(--orange);
     font-style: italic;
     font-weight: 800;
     font-size: 35px;
+    transition: ease-in .4s;
 }
 
-header ul {
+.desktop-header ul {
     border: 1px solid #333;
     border-radius: 50px;
     padding: 2px;
     display: flex;
+    transition: ease-in .4s;
     gap: 20px;
 }
 
-header li {
+.desktop-header li {
     padding: 10px 20px;
     border: 1px solid transparent;
     border-radius: 50px;
@@ -109,24 +116,29 @@ header li {
     transition: ease-in .4s;
 }
 
-header li:hover {
+.desktop-header li:hover {
     border: 1px solid var(--orange);
     background-color: var(--orange);
     transition: ease-in .4s;
 }
-
+.mobile-header{
+    display: none;
+}
 .hero-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    transition: ease-in .4s;
 }
 
 .left-hero {
     place-content: center;
+    transition: ease-in .4s;
 }
 
 .hero-body h1 {
     font-weight: 900;
     font-size: 75px;
+    transition: ease-in .4s;
     line-height: 113%;
 }
 
@@ -135,10 +147,12 @@ header li:hover {
     font-weight: 300;
     font-size: 122px !important;
     line-height: 10px;
+    transition: ease-in .4s;
 }
 
 .hero-body p {
     margin: 30px 0;
+    transition: ease-in .4s;
 }
 
 .btn1 {
@@ -148,6 +162,7 @@ header li:hover {
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.7px;
+    border: 1px solid var(--orange);
     color: #fff;
     transition: ease-in .2s;
 }
@@ -157,6 +172,7 @@ header li:hover {
 .btn1:hover {
     background: #fff;
     color: var(--orange);
+    border: 1px solid #fff;
     transition: ease-in .2s;
 }
 
@@ -175,6 +191,7 @@ header li:hover {
 .btn2:hover {
     background: #fff;
     color: var(--orange);
+    border: 1px solid #fff;
     transition: ease-in .2s;
 
 }
@@ -182,10 +199,12 @@ header li:hover {
 .right-hero {
     text-align: center;
     position: relative;
+    transition: ease-in .4s;
 }
 
 .right-hero img {
     width: 60%;
+    transition: ease-in .4s;
 }
 
 .bottom-left {
@@ -198,29 +217,34 @@ header li:hover {
     bottom: 10%;
     left: 3%;
     padding: 25px;
+    transition: ease-in .4s;
     border-radius: 15px;
     align-items: center;
 }
 
 .right-text {
     text-align: left;
+    transition: ease-in .4s;
 }
 
 .right-text h3 {
     font-size: 25px;
     font-weight: 700;
+    transition: ease-in .4s;
 }
 
 .right-text h4 {
     font-size: 14px;
     font-weight: 400;
     color: #b3b3b3;
+    transition: ease-in .4s;
 }
 
 .top-right {
     width: 30%;
     background: #3838385d;
     position: absolute;
+    transition: ease-in .4s;
     border: 1px solid #5454545d;
     top: 20%;
     right: 5%;
@@ -230,32 +254,39 @@ header li:hover {
 }
 
 .top-right {
+    transition: ease-in .4s;
     text-align: left;
 }
 
 .top-right h3 {
     font-size: 35px;
     font-weight: 700;
+    transition: ease-in .4s;
 }
 
 .top-right h4 {
     font-size: 14px;
     font-weight: 400;
     color: #888888;
+    transition: ease-in .4s;
+        transition: ease-in .4s;
 }
 
-/* change your habits */
+/****************************************************** change your habits ******************************************************/
+/***************************************************************  ***************************************************************/
 #habit {
     padding: 100px 0;
 }
 
 .habit-text {
     text-align: center;
+        transition: ease-in .4s;
 }
 
 .habit-text h3 {
     font-size: 50px;
     font-weight: 800;
+        transition: ease-in .4s;
     margin-bottom: 15px;
 }
 
@@ -263,6 +294,7 @@ header li:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 50px;
+        transition: ease-in .4s;
     gap: 20px;
 }
 .habit-box{
@@ -270,39 +302,48 @@ header li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+        transition: ease-in .4s;
     gap: 20px;
 }
 .habit-box img{
     border-radius: 50%;
     border: 5px solid #222;
+        transition: ease-in .4s;
     width: 80%;
 }
 .habit-box h4{
     font-size: 20px;
+        transition: ease-in .4s;
     font-weight: 600;
 }
 
-/* run extra */
+/*********************************************************** run extra ***********************************************************/
+/***************************************************************  ***************************************************************/
 .extra{
     background: #222222;
     padding: 40px;
     border-radius: 20px;
     display: grid;
+        transition: ease-in .4s;
     grid-template-columns: 50% 50%;
     margin-bottom: 50px;
 }
 .extra h2{
     font-size: 55px;
+        transition: ease-in .4s;
     font-weight: 800;
 }
 .extra p{
     margin: 25px 0;
+        transition: ease-in .4s;
 }
 .extra .btn1{
     padding: 15px 60px;
+        transition: ease-in .4s;
 }
 .extra-img{
     text-align: end;
+        transition: ease-in .4s;
     place-content: center;
 }
 .extra-img img{
@@ -310,44 +351,55 @@ header li:hover {
     object-fit: none;
     object-position: -730px -175px;
     height: -webkit-fill-available;
+        transition: ease-in .4s;
     border-radius: 15px;
 }
 
-/* Trainings and Exercises */
+/**************************************************** Trainings and Exercises ****************************************************/
+/***************************************************************  ***************************************************************/
 #train{
     margin: 100px 0;
+        transition: ease-in .4s;
 }
 .training-text h2{
     font-size: 50px;
+        transition: ease-in .4s;
     font-weight: 800;
 }
 .training-text p{
     margin: 20px 0;
+        transition: ease-in .4s;
 }
 .training-gallery-one {
     display: grid;
     grid-template-columns: 25% 49% 26%;
+        transition: ease-in .4s;
 }
 .training-gallery-one img{
     height: 250px;
+        transition: ease-in .4s;
     object-fit: cover;
     margin-bottom: -4px;
 }
 .training-gallery-two {
     display: grid;
     grid-template-columns: 45% 25% 30%;
+        transition: ease-in .4s;
 }
 .training-gallery-two img{
     height: 250px;
     object-fit: cover;
+        transition: ease-in .4s;
     margin-bottom: -4px;
 }
 .train-rel1{
     position: relative;
+        transition: ease-in .4s;
 }
 .train-abs1{
     position: absolute;
     background: #06ffd151;
+        transition: ease-in .4s;
     width: 100%;
     height: 100%;
     top: 0;
@@ -357,16 +409,20 @@ header li:hover {
 }
 .train-inner1{
     padding: 30px;
+        transition: ease-in .4s;
 }
 .train-inner1 h4{
     color: #000;
+        transition: ease-in .4s;
 }
 .train-rel2{
     position: relative;
+        transition: ease-in .4s;
 }
 .train-abs2{
     position: absolute;
     background: #ff000031;
+        transition: ease-in .4s;
     width: 100%;
     height: 100%;
     top: 0;
@@ -375,16 +431,20 @@ header li:hover {
 }
 .train-inner2{
     padding: 30px;
+    transition: ease-in .4s;
 }
 .train-inner2 h4{
     color: #fff;
+    transition: ease-in .4s;
 }
 .train-rel3{
     position: relative;
+    transition: ease-in .4s;
 }
 .train-abs3{
     position: absolute;
     background: #00000050;
+    transition: ease-in .4s;
     width: 100%;
     height: 100%;
     top: 0;
@@ -394,16 +454,20 @@ header li:hover {
 }
 .train-inner3{
     padding: 30px;
+    transition: ease-in .4s;
 }
 .train-inner3 h4{
     color: #fff;
+    transition: ease-in .4s;
 }
 .train-rel4{
     position: relative;
+    transition: ease-in .4s;
 }
 .train-abs4{
     position: absolute;
     background: #00000050;
+    transition: ease-in .4s;
     width: 100%;
     height: 100%;
     top: 0;
@@ -414,16 +478,20 @@ header li:hover {
 }
 .train-inner4{
     padding: 30px;
+    transition: ease-in .4s;
 }
 .train-inner4 h4{
     color: #fff;
+    transition: ease-in .4s;
 }
 .train-rel5{
     position: relative;
+    transition: ease-in .4s;
 }
 .train-abs5{
     position: absolute;
     background: #42FF0030;
+    transition: ease-in .4s;
     width: 100%;
     height: 100%;
     top: 0;
@@ -433,18 +501,22 @@ header li:hover {
 }
 .train-inner5{
     padding: 30px;
+    transition: ease-in .4s;
 }
 .train-inner5 h4{
     color: #fff;
+    transition: ease-in .4s;
 }
 .train-rel6{
     position: relative;
+    transition: ease-in .4s;
 }
 .train-abs6{
     position: absolute;
     background: #0047FF30;
     width: 100%;
     height: 100%;
+    transition: ease-in .4s;
     top: 0;
     left: 0;
     display: flex;
@@ -452,35 +524,43 @@ header li:hover {
 }
 .train-inner6{
     padding: 30px;
+    transition: ease-in .4s;
 }
 .train-inner6 h4{
     color: #fff;
 }
 
-/* BMI Calculator */
+/******************************************************** BMI Calculator ********************************************************/
+/***************************************************************  ***************************************************************/
 .bmi-text{
     text-align: center;
     margin: 100px 0;
+    transition: ease-in .4s;
 }
 .bmi-text h2{
     font-size: 50px;
     font-weight: 800;
+    transition: ease-in .4s;
 }
 .calculator{
     background: #222222;
     padding: 50px 0;
+    transition: ease-in .4s;
 }
 .cal-grid{
     display: grid;
     grid-template-columns: 45% 55%;
+    transition: ease-in .4s;
 }
 .left-cal h4{
     font-size: 30px;
     margin-bottom: 40px;
+    transition: ease-in .4s;
 }
 .left-cal table,td,th{
     border: 1px solid var(--ash);
     border-collapse: collapse;
+    transition: ease-in .4s;
     padding: 15px 20px;
     text-align: left;
     color: #fff;
@@ -490,45 +570,61 @@ header li:hover {
 }
 .right-cal h4{
     font-size: 30px;
+    transition: ease-in .4s;
 }
 .right-cal p{
     margin-bottom: 40px;
     margin-top: 20px;
+    transition: ease-in .4s;
 }
 .right-cal .input{
-
     background: #ffffff10;
     padding: 15px;
     border-radius: 10px;
+    transition: ease-in .4s;
     color: var(--ash);
+    width: 100%;
 }
+.overflow-form{
+    overflow: hidden;
+    border-radius: 15px;
+    transition: ease-in .4s;
+}
+
 .grid-form{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
     gap: 15px;
+    transition: ease-in .4s;
     margin-bottom: 15px;
 }
 .full{
 grid-column: 1/3;
 }
-/* Meet Our Team */
+/********************************************************* Meet Our Team *********************************************************/
+/***************************************************************  ***************************************************************/
 #team{
     margin: 100px 0;
+    transition: ease-in .4s;
 }
 .team-box{
     text-align: center;
+    transition: ease-in .4s;
 }
 .team-box h2{
     font-size: 50px;
+    transition: ease-in .4s;
 }
 .team-box p{
     margin: 30px 0;
+    transition: ease-in .4s;
 }
 .team-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     border-radius: 15px;
+    transition: ease-in .4s;
     padding: 15px;
     background: #222;
 }
@@ -536,50 +632,62 @@ grid-column: 1/3;
     border-radius: 15px;
     height: 300px;
     object-fit: cover;
+    transition: ease-in .4s;
 }
 .trainer{
     position: relative;
+    transition: ease-in .4s;
 }
 .trainer-text{
     position: absolute;
     bottom: 10%;
+    transition: ease-in .4s;
     left: 10%;
 }
 .trainer-text p{
     color: #aaaaaa;
 }
 
-/* blog */
+/*************************************************************** blog ***************************************************************/
+/***************************************************************  ***************************************************************/
 #blog{
     margin: 100px 0;
+    transition: ease-in .4s;
 }
 .blog-text{
     text-align: center;
+    transition: ease-in .4s;
 }
 .blog-text h2{
     font-size: 50px;
+    transition: ease-in .4s;
 }
 .blog-text p{
     margin: 30px 0;
+    transition: ease-in .4s;
 }
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    transition: ease-in .4s;
     gap: 30px;
 }
 .blog-single{
     background: #333;
     padding: 25px;
+    transition: ease-in .4s;
     border-radius: 15px;
 
 }
 .blog-single img{
     border-radius: 15px;
+    transition: ease-in .4s;
     height: 200px;
     object-fit: cover;
 }
 .blog-single h3{
     font-size: 20px;
+    transition: ease-in .4s;
     margin-top: 10px;
 }
 .blog-single h6{
@@ -587,27 +695,32 @@ grid-column: 1/3;
 }
 .blog-single p{
     margin: 15px 0;
+    transition: ease-in .4s;
 }
 .blog-single button{
     padding: 10px 20px;
     background: var(--orange);
     color: #fff;
+    transition: ease-in .4s;
     border-radius: 50px;
 
 }
-/* footer */
+/************************************************************ footer ************************************************************/
+/***************************************************************  ***************************************************************/
 footer{
 background: #ffffff10;
 }
 .foot-div{
     display: grid;
     grid-template-columns: 50% 24% 24%;
+    transition: ease-in .4s;
     padding: 50px 0;
     gap: 2%;
 }
 .logo-footer h3{
     color: var(--orange);
     font-style: italic;
+    transition: ease-in .4s;
     font-weight: 900;
     font-size: 55px;
     margin-bottom: 20px;
@@ -616,17 +729,21 @@ background: #ffffff10;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
+    transition: ease-in .4s;
 }
 .footer-rest li{
     font-size: 18px;
+    transition: ease-in .4s;
     color: var(--ash);
     font-weight: 400;
     line-height: 35px;
 }
 footer hr{
     border: 1px solid #4e4e4e;
+    transition: ease-in .4s;
 }
 .copy{
     padding: 25px 0;
+    transition: ease-in .4s;
     text-align: center;
 }

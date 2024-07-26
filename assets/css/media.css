@@ -1,9 +1,525 @@
-@media (max-width: 576px){
+@media (max-width: 576px) {
 
-}
-@media (min-width: 577px) and (max-width: 992px){
-    
-}
-@media (min-width: 993px){
+    /*************************************************************** Header ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
 
+    #hero .desktop-header {
+        display: none;
+    }
+
+    #hero .mobile-header {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-header h3 {
+        color: var(--orange);
+        font-style: italic;
+        font-weight: 800;
+        font-size: 35px;
+        transition: ease-in .4s;
+    }
+
+    .mobile-header span {
+        color: #fff;
+        font-size: 25px;
+        transition: ease-in .4s;
+    }
+
+    .hero-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        transition: ease-in .4s;
+    }
+
+    .hero-body h1 {
+        font-weight: 900;
+        font-size: 43px;
+        line-height: 113%;
+        transition: ease-in .4s;
+    }
+
+    .hero-body h1 .cursive {
+        font-family: "Monsieur La Doulaise", cursive;
+        font-weight: 300;
+        font-size: 47px !important;
+        line-height: 10px;
+        transition: ease-in .4s;
+    }
+
+    .btn1 {
+        background: var(--orange);
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        transition: ease-in .2s;
+    }
+
+    .btn2 {
+        background: transparent;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        transition: ease-in .2s;
+
+    }
+
+    .top-right h3 {
+        font-size: 28px;
+        font-weight: 700;
+        transition: ease-in .4s;
+    }
+
+    .right-hero img {
+        width: 85%;
+        transition: ease-in .4s;
+    }
+
+    .bottom-left {
+        display: grid;
+        width: 36%;
+        grid-template-columns: 30% 70%;
+        background: #3838385d;
+        position: absolute;
+        border: 1px solid #5454545d;
+        bottom: 10%;
+        left: 3%;
+        padding: 15px;
+        border-radius: 15px;
+        align-items: center;
+        transition: ease-in .4s;
+    }
+
+    .top-right {
+        width: 38%;
+        background: #3838385d;
+        position: absolute;
+        border: 1px solid #5454545d;
+        top: 13%;
+        right: 3%;
+        padding: 15px;
+        border-radius: 15px;
+        transition: ease-in .4s;
+        align-items: center;
+    }
+
+    /*************************************************************** change your habit ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .habit-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+        transition: ease-in .4s;
+    }
+
+    .habit-text h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** run extra ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .extra {
+        background: #222222;
+        padding: 40px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+        transition: ease-in .4s;
+    }
+
+    .extra h2 {
+        font-size: 29px;
+        font-weight: 800;
+        transition: ease-in .4s;
+    }
+
+    .extra-img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        border-radius: 15px;
+        transition: ease-in .4s;
+    }
+
+    .extra .btn1 {
+        padding: 15px 60px;
+        width: 100%;
+        margin-bottom: 25px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Trainings and Exercises ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .training-gallery-one {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: ease-in .4s;
+    }
+
+    .training-gallery-two {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        transition: ease-in .4s;
+    }
+
+    .train-rel3 {
+        display: none;
+    }
+
+    .train-rel6 {
+        display: none;
+    }
+
+    .training-text h2 {
+        font-size: 29px;
+        transition: ease-in .4s;
+        font-weight: 800;
+    }
+
+    .training-gallery-one img {
+        height: 130px;
+        object-fit: cover;
+        transition: ease-in .4s;
+        margin-bottom: -4px;
+    }
+
+    .training-gallery-two img {
+        height: 130px;
+        object-fit: cover;
+        margin-bottom: -4px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** BMI Calculator ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .cal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        transition: ease-in .4s;
+    }
+
+    .bmi-text h2 {
+        font-size: 29px;
+        font-weight: 800;
+        transition: ease-in .4s;
+    }
+
+    .left-cal h4 {
+        font-size: 23px;
+        margin-bottom: 40px;
+        transition: ease-in .4s;
+    }
+
+    .left-cal table,
+    td,
+    th {
+        border: 1px solid var(--ash);
+        border-collapse: collapse;
+        padding: 12px 13px;
+        text-align: left;
+        color: #fff;
+        font-size: 15px;
+        transition: ease-in .4s;
+    }
+
+    .right-cal {
+        margin-top: 35px;
+        transition: ease-in .4s;
+    }
+
+    .right-cal h4 {
+        font-size: 23px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Meet Our Team ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .team-gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        border-radius: 15px;
+        padding: 15px;
+        transition: ease-in .4s;
+        background: #222;
+    }
+
+    .team-box h2 {
+        font-size: 29px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Blogs ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        transition: ease-in .4s;
+    }
+
+    .blog-text h2 {
+        font-size: 29px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Footer ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .foot-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 0;
+        gap: 2%;
+        transition: ease-in .4s;
+    }
+}
+
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+    /*************************************************************** Header ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .container {
+        width: 85%;
+        transition: ease-in .4s;
+        margin: 0 auto;
+    }
+
+    .hero-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        transition: ease-in .4s;
+    }
+
+    .hero-body h1 {
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 113%;
+        transition: ease-in .4s;
+    }
+
+    .hero-body h1 .cursive {
+        font-family: "Monsieur La Doulaise", cursive;
+        font-weight: 300;
+        font-size: 50px !important;
+        line-height: 10px;
+        transition: ease-in .4s;
+    }
+
+    .desktop-header li {
+        padding: 10px 14px;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 12px;
+        transition: ease-in .4s;
+    }
+
+    .desktop-header ul {
+        border: 1px solid #333;
+        border-radius: 50px;
+        padding: 2px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .btn1 {
+        background: var(--orange);
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        transition: ease-in .2s;
+    }
+
+    .btn2 {
+        background: transparent;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        transition: ease-in .2s;
+    }
+
+    .right-hero img {
+        width: 50%;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** change your habit ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .habit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+        transition: ease-in .4s;
+    }
+
+    .habit-text h3 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** run extra ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .extra {
+        grid-template-columns: 45% 45%;
+        gap: 10%;
+        transition: ease-in .4s;
+    }
+
+    .extra h2 {
+        font-size: 25px;
+        font-weight: 800;
+        transition: ease-in .4s;
+    }
+
+    .extra-img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: -webkit-fill-available;
+        border-radius: 15px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Trainings and Exercises ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .training-text h2 {
+        font-size: 40px;
+        font-weight: 800;
+        transition: ease-in .4s;
+    }
+
+    .training-gallery-one img {
+        height: 130px;
+        object-fit: cover;
+        margin-bottom: -4px;
+        transition: ease-in .4s;
+    }
+
+    .training-gallery-one h4 {
+        font-size: 10px;
+        transition: ease-in .4s;
+    }
+
+    .training-gallery-two h4 {
+        font-size: 10px;
+        transition: ease-in .4s;
+    }
+
+    .training-gallery-two img {
+        height: 130px;
+        object-fit: cover;
+        transition: ease-in .4s;
+        margin-bottom: -4px;
+    }
+
+    /*************************************************************** BMI Calculator ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .cal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        transition: ease-in .4s;
+    }
+
+    .bmi-text h2 {
+        font-size: 40px;
+        transition: ease-in .4s;
+        font-weight: 800;
+    }
+
+    .right-cal {
+        margin-top: 35px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Meet Our Team ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .team-box h2 {
+        font-size: 40px;
+        transition: ease-in .4s;
+    }
+
+    .trainer img {
+        border-radius: 15px;
+        height: 170px;
+        object-fit: cover;
+        transition: ease-in .4s;
+    }
+
+    .trainer-text h3 {
+        font-size: 12px;
+        filter: drop-shadow(0px 0px 3px #000);
+        transition: ease-in .4s;
+    }
+    .trainer-text p {
+        font-size: 11px;
+        filter: drop-shadow(0px 0px 3px #000);
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Blogs ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        transition: ease-in .4s;
+    }
+    .blog-text h2 {
+        font-size: 40px;
+        transition: ease-in .4s;
+    }
+
+    /*************************************************************** Footer ***************************************************************/
+    /*****************************************************************  ******************************************************************/
+    .foot-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 0;
+        transition: ease-in .4s;
+        gap: 2%;
+    }
+    .logo-footer{
+        grid-column: 1/3;
+        margin-bottom: 35px;
+        transition: ease-in .4s;
+    }
+}
+
+@media (min-width: 993px) {
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        transition: ease-in .4s;
+    }
 }
